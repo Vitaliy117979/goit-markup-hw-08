@@ -1,0 +1,53 @@
+/* наші роботи */
+.subtitle {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #212121;
+    margin-bottom: 50px;
+  }
+  
+  .pics__list {
+    --items: 3;
+    --indent: 30px;
+  }
+  
+  .pics__item {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+  }
+  
+  .pics__box {
+    display: block;
+  }
+  
+  .pics__our-products {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+  
+  .pics__our-products.products {
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
+  
+  .pics__our-products__name {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  
+    color: #ffffff;
+  }
