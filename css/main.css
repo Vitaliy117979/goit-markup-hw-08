@@ -341,12 +341,18 @@ textarea::placeholder {
 .foot__email__btn {
   width: 200px;
   height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  align-items: center;
   text-align: center;
-  background-color: var(--accent-text-color);
-  background: #2196f3;
+  background-color: #2196f3;
   border: 0;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -354,18 +360,21 @@ textarea::placeholder {
   -webkit-transition: var(--cubic);
   transition: var(--cubic);
   cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: #fff;
+  margin-left: 30px;
+  margin-right: 10px;
   margin-top: 20px;
   margin-right: auto;
   margin-left: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .foot__email__btn:hover, .foot__email__btn:focus {
   background-color: #188ce8;
 }
 .foot__email__btn__text {
-  font-family: var(--main-fonts);
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
