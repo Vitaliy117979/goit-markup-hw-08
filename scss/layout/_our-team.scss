@@ -3,21 +3,65 @@
 }
 
 .work-section__list {
-  --item: 4;
+  gap: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: 480px) {
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+  }
 }
 
 .list__people-item {
   flex-basis: calc((100% - var(--indent) * (var(--item) - 1)) / var(--item));
-  background: #ffffff;
+  background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 30px;
+
+  padding: auto;
+
+
+
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
 
 .people-item__img {
   display: block;
-  margin-bottom: 30px;
+  
+}
+
+.team__text__card{
+  padding: 30px 20px;
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
 }
 
 .people-item__name {
@@ -30,8 +74,6 @@
   margin-bottom: 10px;
 }
 
-
-
 .people-item__work {
   font-size: 16px;
   line-height: 1.2;
@@ -40,7 +82,6 @@
   text-align: center;
   margin-bottom: 16px;
 }
-
 
 
 .work-section__social-networks__list {

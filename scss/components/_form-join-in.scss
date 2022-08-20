@@ -1,49 +1,122 @@
-.form__join-in__title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+// .form__join-in__title {
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 16px;
+//     letter-spacing: 0.03em;
+//     text-transform: uppercase;
   
-    color: #ffffff;
-  } 
+//     color: #ffffff;
+//   } 
   
-   .form__join-in__title.title {
-    margin-bottom: 20px;
+//    .form__join-in__title.title {
+//     margin-bottom: 20px;
+//   }
+  
+//   .form__join-in__btn {
+//     display: inline-flex;
+//     align-items: center;
+//     gap: 8px;
+  
+//     background-color: var(--blue-color);
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//     border-radius: 4px;
+//     font-weight: 700;
+//     font-size: 16px;
+//     line-height: 30px;
+//     letter-spacing: 0.06em;
+//     color: #ffffff;
+//     border: var(--blue-color);
+//   }
+//   .form__join-in__btn.btn {
+//     padding: 10px 28px;
+//   }
+  
+//   .join-in__email {
+//     margin-right: 12px;
+//   }
+  
+//   .email__input {
+//     width: 359px;
+//     height: 50px;
+//     background-color: #2f303a;
+//     border: 1px solid rgba(255, 255, 255, 0.3);
+//     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+//     border-radius: 4px;
+//   }
+  
+//   .email__input.imput {
+//     padding: 15px;
+//   }
+
+.foot__email__block {
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+    text-align: left;
+  }
+}
+.foot__email__label {
+  padding-left: 16px;
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  width: 100%;
+
+   @media screen and (min-width: 480px) {
+    width: 450px;
   }
   
-  .form__join-in__btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-  
-    background-color: var(--blue-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+  @media screen and (min-width: 1200px) {
+    width: 360px;
+  }
+}
+.foot__email__btn {
+  width: 200px;
+  height: 50px;
+
+  align-items: center;
+  text-align: center;
+  background-color: var(--accent-text-color);
+  background: #2196f3;
+  border: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition: var(--cubic);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+
+  &__text {
+    font-family: var(--main-fonts);
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
-    letter-spacing: 0.06em;
-    color: #ffffff;
-    border: var(--blue-color);
+    color: #fff;
+    margin-left: 30px;
+    margin-right: 10px;
   }
-  .form__join-in__btn.btn {
-    padding: 10px 28px;
+
+  &__icon {
+    fill: #fff;
   }
-  
-  .join-in__email {
+
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+
+  @media screen and (min-width: 1200px) {
+    display: inline-flex;
     margin-right: 12px;
+    margin-top: 0;
   }
-  
-  .email__input {
-    width: 359px;
-    height: 50px;
-    background-color: #2f303a;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-  }
-  
-  .email__input.imput {
-    padding: 15px;
-  }
+}

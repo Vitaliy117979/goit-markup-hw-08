@@ -1,17 +1,19 @@
 /* наші роботи */
-.subtitle {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    text-align: center;
-    color: #212121;
-    margin-bottom: 50px;
+
+
+
+  .pics-section{
+    @media screen and (max-width: 1199px) {
+      display: none;}
   }
-  
+
   .pics__list {
     --items: 3;
     --indent: 30px;
+  }
+
+  .pics__list{
+margin: 0 215px;
   }
   
   .pics__item {
@@ -24,6 +26,7 @@
   
   .pics__box {
     display: block;
+    
   }
   
   .pics__our-products {

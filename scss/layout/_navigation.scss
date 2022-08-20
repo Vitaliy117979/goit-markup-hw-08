@@ -13,6 +13,14 @@
   }
   }
 
+ 
+  .nav__list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  
   .nav__link {
     position: relative;
     display: block;
@@ -98,7 +106,6 @@
     }
     
   }
-
 
 .menu-btn {
   margin-left: auto;
