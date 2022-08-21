@@ -11,6 +11,7 @@
    flex-direction: column;
 
   @media screen and (min-width: 768px) {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: baseline;
@@ -29,7 +30,7 @@
 }
 .logo__foot {
   margin-bottom: 20px;
-  font-family: var(--logo-fonts);
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   line-height: 1.1;
   text-decoration: none;

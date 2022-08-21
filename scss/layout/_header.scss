@@ -70,12 +70,19 @@
     display: flex;
     align-items: center;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #757575;
     text-decoration: none;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+    }
+  
     
     &:focus {
       color: var(--blue-color);
@@ -85,9 +92,28 @@
       color: var(--blue-color);
     }
     
+
+
   }
   
   .contacts__svg {
     fill: currentColor;
     margin-right: 10px;
+
+    &--email{
+
+      @media screen and (min-width: 1200px) {
+        width: 16px;
+        height: 12px;
+      }
+    }
+
+&--hpone{
+
+  @media screen and (min-width: 1200px) {
+    width: 10px;
+    height: 16px;
+  }
+}
+
   }

@@ -12,8 +12,21 @@
     --indent: 30px;
   }
 
-  .pics__list{
-margin: 0 215px;
+  .pics-subtitle{
+    margin-bottom: 50px;
+    margin-top: 60px;
+    font-weight: 700;
+  
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    font-size: 28px;
+  
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+      margin-bottom: 50px;
+    }
   }
   
   .pics__item {

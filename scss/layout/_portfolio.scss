@@ -3,6 +3,16 @@
     justify-content: center;
     gap: 8px;
     margin-bottom: 50px;
+
+    @media screen and (min-width: 480px) {
+      justify-content: left;
+      flex-wrap: wrap;
+    }
+    @media screen and (min-width: 768px) {
+      justify-content: center;
+    }
+
+   
   }
   
  
@@ -51,10 +61,24 @@
   .portfolio__list {
     display: flex;
     flex-wrap: wrap;
-  
-    --items: 3;
-    --indent: 30px;
     gap: 30px;
+  
+    --indent: 30px;
+
+    @media screen and (min-width: 480px) {
+      flex-wrap: wrap;
+      --items: 1;
+    }
+  
+    @media screen and (min-width: 768px) {
+      flex-wrap: wrap;
+      --items: 2;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      flex-wrap: wrap;
+      --items: 3;
+    }
   }
   
   
@@ -71,6 +95,18 @@
       
       &:hover .portfolio__overlay__cards {
         transform: translateY(0%);
+      }
+
+      @media screen and (min-width: 480px) {
+        width: 450px;
+      }
+    
+      @media screen and (min-width: 768px) {
+        width: 354px;
+      }
+    
+      @media screen and (min-width: 1200px) {
+        width: 370px;
       }
   }
   
