@@ -103,6 +103,8 @@
     
       @media screen and (min-width: 768px) {
         width: 354px;
+        display: flex;
+        flex-direction: column;
       }
     
       @media screen and (min-width: 1200px) {
@@ -142,6 +144,7 @@
 
   
   .portfolio__wrap {
+    flex-grow: 1;
     border: 1px solid #eeeeee;
     border-top: none;
     padding: 20px 24px;
